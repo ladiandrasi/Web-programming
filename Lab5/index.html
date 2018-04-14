@@ -15,30 +15,34 @@
         cursor: pointer;
     }
 
-    .button2 {background-color: #008CBA;} /* Blue */
-    .button3 {background-color: #f44336;} /* Red */ 
+    .button2 {background-color: #008CBA;}
     
     #content{
         display: flex;
     }
     .left{
+        width: 50%;
         height: 500px;
         flex:1;
     }
     .right{
+        width: 50%;
         height: 500px;
         flex:1;
     }
     .left{
         list-style-type: none;
     }
+    .myimage{
+        max-width: 100%;
+        max-height: 100%;
+    }
 </style>
 </head>
     <body>
 
-        <button class="button">Green</button>
-        <button class="button button2">Blue</button>
-        <button class="button button3">Red</button>
+        <button class="button">Change image</button>
+        <button class="button button2">Change text</button>
         <div id="content">
             <div class="left">
                 <li><a href="//www.amazon.com">1. Amazon</a></li>
@@ -52,7 +56,9 @@
                 <li><a href="//www.amazon.com">9. Amazon</a></li>
                 <li><a href="//www.amazon.com">10. Amazon</a></li>
             </div>
-            <div class="right"></div>
+            <div class="right">
+                <img class="myimage" src="images/5.jpg">
+            </div>
         </div>
 
     </body>
